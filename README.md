@@ -1,5 +1,3 @@
-Checking repo mix-up
-
 # 03-Juicy-Brick-Breaker
 Basic 2D brick breaker game with extra features. Oct 11, 2020
 
