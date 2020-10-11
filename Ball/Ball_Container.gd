@@ -1,8 +1,8 @@
 extends Node2D
 
 onready var Ball = load("res://Ball/Ball.tscn")
-onready var Cdown = get_node("/root/Game/Starting/Countdown")
-onready var timer = get_node("/root/Game/Starting/Timer")
+onready var Cdown = get_node("/root/LevelOne/Starting/Countdown")
+onready var timer = get_node("/root/LevelOne/Starting/Timer")
 var countdown = 10
 var c = 0
 

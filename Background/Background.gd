@@ -16,19 +16,12 @@ var colors = [
 	,Color8(255, 216, 168)		#orange 2
 ]
 
-
 func _ready():
 	update_color()
-
 
 func update_color():
 	$Tween.interpolate_property(self, "color", color, colors[c], $Timer.wait_time-0.01, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 	$Tween.start()
-
-
-func _on_HUD_changed():
-	update_color()
-
 
 func _on_Timer_timeout():
 	c += 1

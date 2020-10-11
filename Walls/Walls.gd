@@ -1,6 +1,5 @@
 extends StaticBody2D
 
-
 func emit_particle(pos):
 	$Particles2D.emitting = true
 	$Particles2D.global_position = pos
