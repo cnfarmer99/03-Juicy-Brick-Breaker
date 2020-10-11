@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Background.gd" type="Script" id=1]
+[ext_resource path="res://Background/Background.gd" type="Script" id=1]
 
 [node name="Game" type="Node2D"]
 
@@ -13,8 +13,14 @@ __meta__ = {
 }
 
 [node name="Timer" type="Timer" parent="Background"]
-wait_time = 5.0
 autostart = true
 
 [node name="Tween" type="Tween" parent="Background"]
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls"]
+polygon = PoolVector2Array( 1022.93, 0.121872, 1024.82, 594.762, -2.11164, 600.425, -2.11164, -1.76588 )
+
+[node name="Particles2D" type="Particles2D" parent="Walls"]
 [connection signal="timeout" from="Background/Timer" to="Background" method="_on_Timer_timeout"]
