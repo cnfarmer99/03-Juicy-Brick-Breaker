@@ -4,9 +4,10 @@ export var max_speed = 400.0
 export var min_speed = 100.0
 onready var camera = get_node("/root/LevelOne/Camera")
 
-var wall_trauma = 0.005
-var paddle_trauma = 0.008
-var brick_trauma = 0.01
+var amount = 200
+var wall_trauma = 2
+var paddle_trauma = 2
+var brick_trauma = 2
 
 func _ready():
 	contact_monitor = true
@@ -19,6 +20,7 @@ func update_color():
 #add in screen shake
 func screen_shake(amount):
 	camera.add_trauma(amount)
+	print("ball screen shake")
 
 func _physics_process(_delta):
 	var bodies = get_colliding_bodies()

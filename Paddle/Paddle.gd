@@ -33,9 +33,11 @@ func _physics_process(_delta):
 	var h = 1 - (1/distort.y * p)
 	change_size(w,h)
 
+
 func change_size(w, h):
 	$Color.rect_scale = Vector2(w, h)
 	$CollisionShape2D.set_scale(Vector2(collision_transform.x*w, collision_transform.y*h))
+
 
 func start_paddle():
 	var target_pos = position

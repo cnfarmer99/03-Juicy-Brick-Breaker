@@ -5,8 +5,8 @@ export var max_offset = Vector2(100, 50)    # Maximum hor/ver shake in pixels.
 export var max_roll = 0.1                   # Maximum rotation in radians (use sparingly).
 export (NodePath) var target                # Assign the node this camera will follow.
 
-var trauma = 0.0                            # Current shake strength.
-var trauma_power = 2                        # Trauma exponent. Use [2, 3].
+var trauma = 2.0                            # Current shake strength.
+var trauma_power = 300                        # Trauma exponent. Use [2, 3].
 onready var noise = OpenSimplexNoise.new()
 var noise_y = 0
 
@@ -32,3 +32,4 @@ func shake():
   
 func add_trauma(amount):
 	trauma = min(trauma + amount, 1.0)
+	print("trauma")
