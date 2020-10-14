@@ -2,7 +2,7 @@ extends RigidBody2D
 
 export var max_speed = 400.0
 export var min_speed = 100.0
-onready var camera = get_node("/root/LevelOne/Camera")
+onready var camera = get_node("/root/LevelTwo/Camera")
 
 var amount = 200
 var wall_trauma = 2
