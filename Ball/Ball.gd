@@ -3,6 +3,7 @@ extends RigidBody2D
 export var max_speed = 400.0
 export var min_speed = 100.0
 onready var camera = get_node("/root/LevelOne/Camera")
+onready var camera2 = get_node("/root/LevelTwo/Camera")
 
 var amount = 200
 var wall_trauma = 2
@@ -20,6 +21,7 @@ func update_color():
 #add in screen shake
 func screen_shake(amount):
 	camera.add_trauma(amount)
+	#camera2.add_trauma(amount)
 	print("ball screen shake")
 
 func _physics_process(_delta):

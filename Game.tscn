@@ -1,8 +1,9 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Paddle/Paddle.gd" type="Script" id=1]
 [ext_resource path="res://Ball/Ball_Container.gd" type="Script" id=2]
 [ext_resource path="res://Brick/Bricks.gd" type="Script" id=3]
+[ext_resource path="res://Assets/BebasNeueRegular.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://Walls/Walls.gd" type="Script" id=5]
 [ext_resource path="res://Background/Background.gd" type="Script" id=6]
 [ext_resource path="res://Assets/confetti.png" type="Texture" id=7]
@@ -92,6 +93,10 @@ color_ramp = SubResource( 12 )
 hue_variation = 0.7
 hue_variation_random = 0.25
 
+[sub_resource type="DynamicFont" id=16]
+size = 24
+font_data = ExtResource( 4 )
+
 [node name="LevelOne" type="Node2D"]
 
 [node name="Background" type="ColorRect" parent="."]
@@ -176,5 +181,21 @@ uppercase = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="NextLevel" type="Button" parent="."]
+margin_left = 804.0
+margin_top = 690.0
+margin_right = 1004.0
+margin_bottom = 750.0
+custom_fonts/font = SubResource( 16 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0642242, 0.104888, 0.714844, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "Next Level"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="timeout" from="Background/Timer" to="Background" method="_on_Timer_timeout"]
 [connection signal="timeout" from="Starting/Timer" to="Ball_Container" method="_on_Timer_timeout"]
+[connection signal="pressed" from="NextLevel" to="Background" method="_on_NextLevel_pressed"]

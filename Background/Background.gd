@@ -27,3 +27,8 @@ func _on_Timer_timeout():
 	c += 1
 	c %= colors.size()
 	update_color()
+
+
+func _on_NextLevel_pressed():
+	get_tree().change_scene("res://Game2.tscn")
+	print("pressed")
