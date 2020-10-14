@@ -23,8 +23,6 @@ func start_bricks():
 		for h in range(H):
 			var brick = Brick.instance()
 			brick.position = Vector2(startx + (randi() % 9 + 1) * (B.x + margin), starty + (randi() % 10 + 1) * (B.y + margin))
-			while $CollisionShape2D :
-				brick.position = Vector2(startx + (randi() % 9 + 1) * (B.x + margin), starty + (randi() % 10 + 1) * (B.y + margin))
 			brick.row = h 
 			brick.col = w
 			add_child(brick)
