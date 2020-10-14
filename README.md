@@ -8,7 +8,7 @@ Description:
 1. Screen Shake doesn't appear to be working. 
 2. Paddle shrink and stretch only working while paddle moving quickly
 3. Make next level button appear when all bricks broken from first level
-4. Adjust bricks in second level to create actual new level (want to print the bricks randomly within a set vector if possible)
+4. Adjust bricks in second level to create actual new level (want the random bricks to either not spawn on top of each other)
 5. Make play again menu appear after 2nd level won
 6. Figure out how to make 3 lives with life count visible
         Make bottom wall the "life remover"
