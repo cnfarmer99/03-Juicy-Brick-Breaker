@@ -4,7 +4,7 @@ export var max_speed = 400.0
 export var min_speed = 100.0
 onready var camera = get_node("/root/LevelOne/Camera")
 
-var amount = 200
+var amount = 2
 var wall_trauma = 2
 var paddle_trauma = 2
 var brick_trauma = 2

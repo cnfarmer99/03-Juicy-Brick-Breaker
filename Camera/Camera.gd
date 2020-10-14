@@ -6,7 +6,7 @@ export var max_roll = 0.1                   # Maximum rotation in radians (use s
 export (NodePath) var target                # Assign the node this camera will follow.
 
 var trauma = 2.0                            # Current shake strength.
-var trauma_power = 300                        # Trauma exponent. Use [2, 3].
+var trauma_power = 2                       # Trauma exponent. Use [2, 3].
 onready var noise = OpenSimplexNoise.new()
 var noise_y = 0
 
