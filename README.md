@@ -5,8 +5,7 @@ Description:
 2D brick breaker game made in Godot with extra features. 
 
 ## TODO List: All current issues with project (a lot, I'm sorry)
-2. Paddle shrink and stretch only working while paddle moving quickly
-3. Make next level button appear when all bricks broken from first level
+
 4. Adjust bricks in second level to create actual new level (want the random bricks to either not spawn on top of each other)
 5. Make play again menu appear after 2nd level won
 6. Figure out how to make 3 lives with life count visible
@@ -19,7 +18,7 @@ Description:
 3. Particles for bricks- working
 4. Particles for walls- working
 5. Bricks fall down- working
-6. Paddle expands and stretches
+6. Paddle shrinks and stretches when moving quickly
 7. Screen shake
 8. Change color of ball, bricks, and paddle- working
 

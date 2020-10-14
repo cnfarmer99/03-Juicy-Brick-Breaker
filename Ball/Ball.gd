@@ -5,8 +5,6 @@ export var min_speed = 100.0
 onready var camera = get_node("/root/LevelOne/Camera")
 
 var amount = 2
-#var wall_trauma = 2
-#var paddle_trauma = 2
 var brick_trauma = 2
 
 func _ready():
@@ -20,15 +18,10 @@ func update_color():
 #add in screen shake
 func screen_shake(amount):
 	camera.add_trauma(amount)
-	print("ball screen shake")
 
 func _physics_process(_delta):
 	var bodies = get_colliding_bodies()
 	for body in bodies:
-#		if body.name == "Walls":
-#			screen_shake(wall_trauma)
-#		if body.name == "Paddle":
-#			screen_shake(paddle_trauma)
 		if body.is_in_group("Brick"):
 			screen_shake(brick_trauma)
 		if body.has_method("emit_particle"):

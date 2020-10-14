@@ -29,9 +29,7 @@ func shake():
 	rotation = max_roll * amount * noise.get_noise_2d(noise.seed, noise_y)
 	#offset.x = max_offset.x * amount * noise.get_noise_2d(noise.seed*2, noise_y)
 	offset.x = rand_range(-2, 2)
-	print(offset.x)
 	offset.y = max_offset.y * amount * noise.get_noise_2d(noise.seed*3, noise_y)
   
 func add_trauma(amount):
 	trauma = min(trauma + amount, 1.0)
-	print("trauma")
