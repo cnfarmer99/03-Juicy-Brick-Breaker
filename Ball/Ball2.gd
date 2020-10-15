@@ -18,7 +18,6 @@ func update_color():
 #add in screen shake
 func screen_shake(amount):
 	camera.add_trauma(amount)
-	print("ball screen shake")
 
 func _physics_process(_delta):
 	var bodies = get_colliding_bodies()

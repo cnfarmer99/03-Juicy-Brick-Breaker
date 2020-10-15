@@ -31,4 +31,4 @@ func _on_Timer_timeout():
 
 func _on_NextLevel_pressed():
 	get_tree().change_scene("res://Game2.tscn")
-	print("pressed")
+	
