@@ -5,6 +5,8 @@ Description:
 2D brick breaker game made in Godot with extra features. 
 
 ## TODO List: All current issues with project (a lot, I'm sorry)
+4. Make next level button appear after all bricks broken
+        if all bricks broken then enable button
 5. Make play again menu appear after 2nd level won
 6. Figure out how to make 3 lives with life count visible
         Make bottom wall the "life remover"
